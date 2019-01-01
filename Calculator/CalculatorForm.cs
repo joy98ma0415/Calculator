@@ -286,6 +286,7 @@ namespace Calculator
                 if (textBoxOperand.Text != null)
                 {
                     textBoxResult.Text = "1 " + " / " + textBoxOperand.Text + " = " + (1 / Convert.ToDouble(textBoxOperand.Text)).ToString();
+                    textBoxOperand.Clear();
                 }
                 else
                 {
@@ -305,6 +306,7 @@ namespace Calculator
                 if (textBoxOperand.Text != null)
                 {
                     int number = Convert.ToInt32(textBoxOperand.Text);
+                    textBoxOperand.Clear();
                     textBoxResult.Text = number + " 的平方 " + " = " + Math.Pow(number, 2);
                 }
                 else
