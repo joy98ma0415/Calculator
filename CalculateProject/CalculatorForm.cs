@@ -360,7 +360,9 @@ namespace Calculator
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            CalculateProject.MainForm main = new CalculateProject.MainForm();
+            this.Visible = false;
+            main.Visible = true;
         }
 
         #endregion
